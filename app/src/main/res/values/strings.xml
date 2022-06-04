@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Api Post</string>
+    <string name="comments">Comments</string>
+    <string name="add_post">add post</string>
+    <string name="enter_the_title">enter the title</string>
+    <string name="enter_the_body">enter the body</string>
+    <string name="post">POST</string>
+    <string name="required">required</string>
+    <string name="enter_the_user_id">enter the user id</string>
+</resources>

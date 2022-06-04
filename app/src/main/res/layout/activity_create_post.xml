@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    android:padding="@dimen/_5sdp"
+    tools:context=".ui.CreatePostActivity">
+
+    <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@color/dark_mode"
+        android:hint="@string/enter_the_title"
+        android:paddingVertical="@dimen/_5sdp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toTopOf="parent"
+        android:maxLines="1"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/edit_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@color/dark_mode"
+        android:hint="@string/enter_the_body"
+        android:paddingVertical="@dimen/_5sdp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@id/edit_title"
+        android:inputType="textAutoComplete"
+        />
+    <EditText
+        android:id="@+id/edit_userId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@color/dark_mode"
+        android:hint="@string/enter_the_user_id"
+        android:paddingVertical="@dimen/_5sdp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@id/edit_body"
+        android:inputType="number"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_post"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:paddingVertical="@dimen/_10sdp"
+        android:text="@string/post"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        app:cornerRadius="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_userId"
+        app:layout_constraintWidth_percent="0.45" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
